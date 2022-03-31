@@ -1,0 +1,440 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    outline: 0;
+}
+
+html,body {
+    height: 100%;
+    background: rgb(225, 225, 225);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Página de Login */
+
+.box-login {
+    max-width: 600px;
+    width: 95%;
+    padding: 60px 2%;
+    background: white;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-shadow: 5px 5px 15px 5px #000;
+}
+
+.box-login h2 {
+    text-align: center;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 10px 0;
+    color: black;
+}
+
+.box-login input[type=text], .box-login input[type=password] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #555;
+    padding-left: 8px;
+    margin-top: 8px;
+}
+
+.box-login button[type=submit], .box-content form button[type=submit] {
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 8px;
+    font-size: 14px;
+    background: #00bfa5;
+    border: 0;
+    color: white;
+}
+
+.form-group-login label {
+    font-size: 13px;
+    font-weight: 300;
+    color: black;
+}
+
+form .form-group-login:nth-of-type(2) {
+    position: relative;
+    top: 20px;
+}
+
+/* Box erro do login */
+.erro-box {
+    width: 100%;
+    padding: 4px 2%;
+    background: #F75353;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+.sucesso-box {
+    width: 100%;
+    padding: 4px 2%;
+    background: #86e67a;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* Painel de controle */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w50 {
+    width: 49%;
+}
+
+.clear {
+    clear: both;
+}
+
+.center {
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.menu-wrapper {
+    width: 250px;
+}
+
+div.menu {
+    overflow-x: hidden;
+    float: left;
+    width: 250px;
+    height: 100%;
+    background: #455a64;
+    overflow-y: auto;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+header {
+    padding: 10px 0;
+    background: #78909c;
+    width: calc(100% - 250px);
+    position: relative;
+    left: 250px;
+}
+
+.logout {
+    float: right;
+}
+
+.logout a{
+    position: relative;
+    top: 4px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.menu-btn {
+    display: none;
+    float: left;
+    cursor: pointer;
+    font-size: 23px;
+    color: white;
+}
+
+.empresa {
+    display: block;
+    color: white;
+    float: left;
+    font-size: 23px;
+}
+
+div.box-usuario {
+    text-align: center;
+}
+
+.avatar-usuario {
+    text-align: left;
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    /* background: #2F3D42; */
+    border: 3px solid #2F3D42;
+}
+
+.avatar-usuario i {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    color: #2F3D42;
+}
+
+.nome-usuario {
+    margin-top: 10px;
+}
+
+.nome-usuario p {
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+}
+
+.content {
+    width: calc(100% - 250px);
+    position: relative;
+    left: 250px;
+    padding: 10px;
+}
+
+.box-content {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+.items-menu {
+    margin-top: 30px;
+}
+
+.items-menu h2 {
+    text-align: left;
+    font-weight: normal;
+    font-size: 17px;
+    background: #2F3D42;
+    color: white;
+    padding: 8px;
+}
+
+.items-menu a {
+    display: block;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid #2F3D42;
+}
+
+.menu-active {
+    background: #3a4b51;
+}
+
+.box-content > h2 {
+    font-weight: 300;
+}
+
+.box-metricas{
+	margin-top:16px;
+	padding:0 15px;
+}
+
+.box-metrica-single{
+	float: left;
+	position: relative;
+	width: 33.3%;
+	background: #F4B03E;
+	border: 5px solid white;
+}
+
+.box-metricas .box-metrica-single:nth-of-type(2){
+	background: #E05C4E;
+}
+
+.box-metricas .box-metrica-single:nth-of-type(3){
+	background: #0091ea;
+}
+
+.box-metrica-wrapper{
+	padding: 10px 20px;
+	text-align: left;
+	color: white;
+}
+
+.box-metrica-wrapper h2{
+	font-size: 28px;
+}
+
+.box-metrica-wrapper p{
+	padding: 10px 0;
+	font-size: 26px;
+}
+
+.box-content form {
+    margin: 30px 0;
+}
+
+.box-content form label {
+    font-size: 17px;
+    font-weight: 300;
+    color: black;
+    display: block;
+}
+
+.box-content .form-group {
+    margin: 15px 0;
+}
+
+.box-content form input[type=text], .box-content form input[type=password], .box-content form select {
+    font-size: 16px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    font-weight: normal;
+    color: black;
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+}
+
+.box-content textarea {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    resize: vertical;
+}
+
+/* Tabelas */
+
+.wrapper-table {
+    overflow-x: auto;
+}
+
+table {
+    margin: 20px 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr:nth-of-type(1) {
+    background: #0091ea;
+    color: white;
+}
+
+table tr  {
+    color: #555;
+    border-bottom: 1px solid #ccc;
+}
+
+table td {
+    padding: 8px;
+}
+
+table a.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 4px 6px;
+    color: white;
+    font-size: 13px;
+}
+
+.inativar {
+    background: #E05C4E;
+}
+
+.edit {
+    background: #F4B03E;
+}
+
+.ativar {
+    background: #86e67a;
+}
+
+/* Paginacao */
+
+.paginacao {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.paginacao a {
+    font-size: 14px;
+    margin: 0 18px;
+    display: inline-block;
+    padding: 3px 4px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #666;
+}
+
+.paginacao a.page-selected {
+    background: rgb(220, 220, 220);
+}
+
+
+@media screen and (max-width: 1200px) {
+    .box-metrica-single {
+        min-height: 100px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+   .box-metrica-single {
+       width: 100%;
+       height: auto;
+   } 
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .empresa {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+        left: 0;
+    }
+
+    header {
+        left: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .w50 {
+        width: 100%;
+    }
+    .box-metrica-single {
+        width: 100%;
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .menu-wrapper {
+        width: 200px;
+    }
+}
